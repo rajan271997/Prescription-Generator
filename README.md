@@ -7,7 +7,7 @@ Its an application for a doctor to give us the ability to create a prescriptin f
 
 **Highlights :**
 
-In the First Page - Medicines 
+In the First Page - Medicines  - Show the list of medicines
 
 1. Core Data to save data.
 2. Search the medicines.
@@ -15,7 +15,7 @@ In the First Page - Medicines
 4. Add Pagiation.
 5. Showed the saved prescrptions.
 
-In the 2nd page - Prescrption 
+In the 2nd page - Prescrption  - Show the medicines that are selected and their required details
 
 1. Add the patient name and days of the course.
 2. Remove an medicine using swipe.
