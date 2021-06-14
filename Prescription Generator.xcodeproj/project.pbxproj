@@ -3,29 +3,71 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04466BA5100470E1DC3668DE /* Pods_Prescription_Generator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFCC0FE811717696D08458A /* Pods_Prescription_Generator.framework */; };
+		C0077D8B26776E26007D5769 /* Medicine+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0077D8926776E26007D5769 /* Medicine+CoreDataClass.swift */; };
+		C0077D8C26776E26007D5769 /* Prescription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0077D8726776E26007D5769 /* Prescription+CoreDataClass.swift */; };
+		C0077D8D26776E26007D5769 /* Prescription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0077D8A26776E26007D5769 /* Prescription+CoreDataProperties.swift */; };
+		C0077D8E26776E26007D5769 /* Medicine+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0077D8826776E26007D5769 /* Medicine+CoreDataProperties.swift */; };
+		C0286EE7267524EE00258717 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0286EE6267524EE00258717 /* LoadingIndicator.swift */; };
+		C0286EEB2675E4AD00258717 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0286EEA2675E4AD00258717 /* UIView+Extension.swift */; };
+		C0286EF62675E79A00258717 /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0286EF42675E79A00258717 /* MedicineTableViewCell.swift */; };
+		C0286EF72675E79A00258717 /* MedicineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0286EF52675E79A00258717 /* MedicineTableViewCell.xib */; };
+		C0427F862674DE0000309A98 /* Prescription_Generator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0427F842674DE0000309A98 /* Prescription_Generator.xcdatamodeld */; };
+		C0427F9C2674E13900309A98 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0427F9B2674E13900309A98 /* Medicine.swift */; };
+		C0427FA02674E25500309A98 /* WebServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0427F9F2674E25500309A98 /* WebServiceHelper.swift */; };
+		C0427FA32674E57E00309A98 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0427FA22674E57E00309A98 /* Helper.swift */; };
+		C0427FA72674E5D500309A98 /* MedicineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0427FA62674E5D500309A98 /* MedicineViewModel.swift */; };
+		C042D7D126764DDE00BF21E7 /* PrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042D7D026764DDE00BF21E7 /* PrescriptionViewController.swift */; };
+		C042D7EA26768D3700BF21E7 /* PrescriptionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042D7E926768D3700BF21E7 /* PrescriptionsListViewController.swift */; };
+		C042D7EE26768DF800BF21E7 /* PrescriptionInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042D7EC26768DF800BF21E7 /* PrescriptionInfoTableViewCell.swift */; };
+		C042D7EF26768DF800BF21E7 /* PrescriptionInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C042D7ED26768DF800BF21E7 /* PrescriptionInfoTableViewCell.xib */; };
 		C0C3E1DD2674DA35003AF403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C3E1DC2674DA35003AF403 /* AppDelegate.swift */; };
 		C0C3E1DF2674DA35003AF403 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C3E1DE2674DA35003AF403 /* SceneDelegate.swift */; };
-		C0C3E1E12674DA35003AF403 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C3E1E02674DA35003AF403 /* ViewController.swift */; };
+		C0C3E1E12674DA35003AF403 /* MedicinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C3E1E02674DA35003AF403 /* MedicinesViewController.swift */; };
 		C0C3E1E42674DA35003AF403 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C3E1E22674DA35003AF403 /* Main.storyboard */; };
-		C0C3E1E72674DA35003AF403 /* Prescription_Generator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0C3E1E52674DA35003AF403 /* Prescription_Generator.xcdatamodeld */; };
 		C0C3E1E92674DA3C003AF403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C3E1E82674DA3C003AF403 /* Assets.xcassets */; };
 		C0C3E1EC2674DA3C003AF403 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C3E1EA2674DA3C003AF403 /* LaunchScreen.storyboard */; };
+		C0C3E1FD2674DC70003AF403 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C3E1FC2674DC70003AF403 /* CoreDataHelper.swift */; };
+		C0EF34EB2675FB5300935C62 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF34EA2675FB5300935C62 /* UITextField+Extension.swift */; };
+		C0EF34EE2676086000935C62 /* AddMedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF34ED2676086000935C62 /* AddMedicineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83F126A9FDBC1E78717E16A9 /* Pods-Prescription Generator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prescription Generator.debug.xcconfig"; path = "Target Support Files/Pods-Prescription Generator/Pods-Prescription Generator.debug.xcconfig"; sourceTree = "<group>"; };
+		ACEEC2E93ABF2187AF7B0F49 /* Pods-Prescription Generator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prescription Generator.release.xcconfig"; path = "Target Support Files/Pods-Prescription Generator/Pods-Prescription Generator.release.xcconfig"; sourceTree = "<group>"; };
+		ACFCC0FE811717696D08458A /* Pods_Prescription_Generator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prescription_Generator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0077D8726776E26007D5769 /* Prescription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Prescription+CoreDataClass.swift"; path = "/Users/rajanarora/Documents/Learnings/Prescription Generator/Prescription Generator/Helpers/ Core Data Helpers/Prescription+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		C0077D8826776E26007D5769 /* Medicine+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Medicine+CoreDataProperties.swift"; path = "/Users/rajanarora/Documents/Learnings/Prescription Generator/Prescription Generator/Helpers/ Core Data Helpers/Medicine+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		C0077D8926776E26007D5769 /* Medicine+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Medicine+CoreDataClass.swift"; path = "/Users/rajanarora/Documents/Learnings/Prescription Generator/Prescription Generator/Helpers/ Core Data Helpers/Medicine+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		C0077D8A26776E26007D5769 /* Prescription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Prescription+CoreDataProperties.swift"; path = "/Users/rajanarora/Documents/Learnings/Prescription Generator/Prescription Generator/Helpers/ Core Data Helpers/Prescription+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		C0286EE6267524EE00258717 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		C0286EEA2675E4AD00258717 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		C0286EF42675E79A00258717 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
+		C0286EF52675E79A00258717 /* MedicineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicineTableViewCell.xib; sourceTree = "<group>"; };
+		C0427F852674DE0000309A98 /* Prescription_Generator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prescription_Generator.xcdatamodel; sourceTree = "<group>"; };
+		C0427F9B2674E13900309A98 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		C0427F9F2674E25500309A98 /* WebServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceHelper.swift; sourceTree = "<group>"; };
+		C0427FA22674E57E00309A98 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		C0427FA62674E5D500309A98 /* MedicineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineViewModel.swift; sourceTree = "<group>"; };
+		C042D7D026764DDE00BF21E7 /* PrescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionViewController.swift; sourceTree = "<group>"; };
+		C042D7E926768D3700BF21E7 /* PrescriptionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionsListViewController.swift; sourceTree = "<group>"; };
+		C042D7EC26768DF800BF21E7 /* PrescriptionInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionInfoTableViewCell.swift; sourceTree = "<group>"; };
+		C042D7ED26768DF800BF21E7 /* PrescriptionInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrescriptionInfoTableViewCell.xib; sourceTree = "<group>"; };
 		C0C3E1D92674DA35003AF403 /* Prescription Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prescription Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C3E1DC2674DA35003AF403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C3E1DE2674DA35003AF403 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C0C3E1E02674DA35003AF403 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0C3E1E02674DA35003AF403 /* MedicinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinesViewController.swift; sourceTree = "<group>"; };
 		C0C3E1E32674DA35003AF403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C0C3E1E62674DA35003AF403 /* Prescription_Generator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prescription_Generator.xcdatamodel; sourceTree = "<group>"; };
 		C0C3E1E82674DA3C003AF403 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0C3E1EB2674DA3C003AF403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0C3E1ED2674DA3C003AF403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C3E1FC2674DC70003AF403 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		C0EF34EA2675FB5300935C62 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		C0EF34ED2676086000935C62 /* AddMedicineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +75,113 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04466BA5100470E1DC3668DE /* Pods_Prescription_Generator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E732858B14F8F3CCFC1DBF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACFCC0FE811717696D08458A /* Pods_Prescription_Generator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB69A10FB011743B131A91CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83F126A9FDBC1E78717E16A9 /* Pods-Prescription Generator.debug.xcconfig */,
+				ACEEC2E93ABF2187AF7B0F49 /* Pods-Prescription Generator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0286EE92675E49200258717 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C0286EEA2675E4AD00258717 /* UIView+Extension.swift */,
+				C0EF34EA2675FB5300935C62 /* UITextField+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C0286EEF2675E6C000258717 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C0C3E1DE2674DA35003AF403 /* SceneDelegate.swift */,
+				C0C3E1DC2674DA35003AF403 /* AppDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C0286EF02675E6D400258717 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0C3E1E02674DA35003AF403 /* MedicinesViewController.swift */,
+				C0EF34ED2676086000935C62 /* AddMedicineViewController.swift */,
+				C042D7D026764DDE00BF21E7 /* PrescriptionViewController.swift */,
+				C042D7E926768D3700BF21E7 /* PrescriptionsListViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C0286EF12675E6ED00258717 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C0C3E1EA2674DA3C003AF403 /* LaunchScreen.storyboard */,
+				C0C3E1E22674DA35003AF403 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C0286EF32675E77300258717 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C0286EF42675E79A00258717 /* MedicineTableViewCell.swift */,
+				C0286EF52675E79A00258717 /* MedicineTableViewCell.xib */,
+				C042D7EC26768DF800BF21E7 /* PrescriptionInfoTableViewCell.swift */,
+				C042D7ED26768DF800BF21E7 /* PrescriptionInfoTableViewCell.xib */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		C0427F992674E0DE00309A98 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C0C3E1FA2674DBAB003AF403 /*  Core Data Helpers */,
+				C0427F9F2674E25500309A98 /* WebServiceHelper.swift */,
+				C0286EE6267524EE00258717 /* LoadingIndicator.swift */,
+				C0427FA22674E57E00309A98 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C0427F9A2674E10A00309A98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0427F9B2674E13900309A98 /* Medicine.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0427FA52674E5C200309A98 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0427FA62674E5D500309A98 /* MedicineViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		C0C3E1D02674DA34003AF403 = {
 			isa = PBXGroup;
 			children = (
 				C0C3E1DB2674DA35003AF403 /* Prescription Generator */,
 				C0C3E1DA2674DA35003AF403 /* Products */,
+				BB69A10FB011743B131A91CD /* Pods */,
+				9E732858B14F8F3CCFC1DBF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +196,31 @@
 		C0C3E1DB2674DA35003AF403 /* Prescription Generator */ = {
 			isa = PBXGroup;
 			children = (
-				C0C3E1DC2674DA35003AF403 /* AppDelegate.swift */,
-				C0C3E1DE2674DA35003AF403 /* SceneDelegate.swift */,
-				C0C3E1E02674DA35003AF403 /* ViewController.swift */,
-				C0C3E1E22674DA35003AF403 /* Main.storyboard */,
+				C0286EEF2675E6C000258717 /* Common */,
+				C0427F9A2674E10A00309A98 /* Models */,
+				C0427FA52674E5C200309A98 /* View Models */,
+				C0286EF02675E6D400258717 /* View Controllers */,
+				C0286EF12675E6ED00258717 /* Storyboards */,
+				C0427F992674E0DE00309A98 /* Helpers */,
+				C0286EF32675E77300258717 /* Table View Cells */,
+				C0286EE92675E49200258717 /* Extensions */,
 				C0C3E1E82674DA3C003AF403 /* Assets.xcassets */,
-				C0C3E1EA2674DA3C003AF403 /* LaunchScreen.storyboard */,
 				C0C3E1ED2674DA3C003AF403 /* Info.plist */,
-				C0C3E1E52674DA35003AF403 /* Prescription_Generator.xcdatamodeld */,
+				C0427F842674DE0000309A98 /* Prescription_Generator.xcdatamodeld */,
 			);
 			path = "Prescription Generator";
+			sourceTree = "<group>";
+		};
+		C0C3E1FA2674DBAB003AF403 /*  Core Data Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C0077D8926776E26007D5769 /* Medicine+CoreDataClass.swift */,
+				C0077D8826776E26007D5769 /* Medicine+CoreDataProperties.swift */,
+				C0077D8726776E26007D5769 /* Prescription+CoreDataClass.swift */,
+				C0077D8A26776E26007D5769 /* Prescription+CoreDataProperties.swift */,
+				C0C3E1FC2674DC70003AF403 /* CoreDataHelper.swift */,
+			);
+			path = " Core Data Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0C3E1F02674DA3C003AF403 /* Build configuration list for PBXNativeTarget "Prescription Generator" */;
 			buildPhases = (
+				333086194CCCEE034B5BE1E0 /* [CP] Check Pods Manifest.lock */,
 				C0C3E1D52674DA35003AF403 /* Sources */,
 				C0C3E1D62674DA35003AF403 /* Frameworks */,
 				C0C3E1D72674DA35003AF403 /* Resources */,
+				98EBA26B20C068C54F18B2BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,20 +285,81 @@
 				C0C3E1EC2674DA3C003AF403 /* LaunchScreen.storyboard in Resources */,
 				C0C3E1E92674DA3C003AF403 /* Assets.xcassets in Resources */,
 				C0C3E1E42674DA35003AF403 /* Main.storyboard in Resources */,
+				C042D7EF26768DF800BF21E7 /* PrescriptionInfoTableViewCell.xib in Resources */,
+				C0286EF72675E79A00258717 /* MedicineTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		333086194CCCEE034B5BE1E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Prescription Generator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98EBA26B20C068C54F18B2BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prescription Generator/Pods-Prescription Generator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Prescription Generator/Pods-Prescription Generator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prescription Generator/Pods-Prescription Generator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0C3E1D52674DA35003AF403 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0C3E1E12674DA35003AF403 /* ViewController.swift in Sources */,
+				C042D7EE26768DF800BF21E7 /* PrescriptionInfoTableViewCell.swift in Sources */,
+				C0EF34EE2676086000935C62 /* AddMedicineViewController.swift in Sources */,
+				C0EF34EB2675FB5300935C62 /* UITextField+Extension.swift in Sources */,
+				C0286EE7267524EE00258717 /* LoadingIndicator.swift in Sources */,
+				C0286EEB2675E4AD00258717 /* UIView+Extension.swift in Sources */,
+				C0077D8D26776E26007D5769 /* Prescription+CoreDataProperties.swift in Sources */,
+				C0C3E1E12674DA35003AF403 /* MedicinesViewController.swift in Sources */,
+				C0427FA02674E25500309A98 /* WebServiceHelper.swift in Sources */,
 				C0C3E1DD2674DA35003AF403 /* AppDelegate.swift in Sources */,
+				C042D7D126764DDE00BF21E7 /* PrescriptionViewController.swift in Sources */,
+				C0427F862674DE0000309A98 /* Prescription_Generator.xcdatamodeld in Sources */,
+				C0077D8C26776E26007D5769 /* Prescription+CoreDataClass.swift in Sources */,
+				C0427FA72674E5D500309A98 /* MedicineViewModel.swift in Sources */,
+				C042D7EA26768D3700BF21E7 /* PrescriptionsListViewController.swift in Sources */,
+				C0286EF62675E79A00258717 /* MedicineTableViewCell.swift in Sources */,
+				C0077D8E26776E26007D5769 /* Medicine+CoreDataProperties.swift in Sources */,
+				C0C3E1FD2674DC70003AF403 /* CoreDataHelper.swift in Sources */,
+				C0427FA32674E57E00309A98 /* Helper.swift in Sources */,
+				C0077D8B26776E26007D5769 /* Medicine+CoreDataClass.swift in Sources */,
 				C0C3E1DF2674DA35003AF403 /* SceneDelegate.swift in Sources */,
-				C0C3E1E72674DA35003AF403 /* Prescription_Generator.xcdatamodeld in Sources */,
+				C0427F9C2674E13900309A98 /* Medicine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +503,14 @@
 		};
 		C0C3E1F12674DA3C003AF403 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F126A9FDBC1E78717E16A9 /* Pods-Prescription Generator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AK42MN434;
 				INFOPLIST_FILE = "Prescription Generator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +524,14 @@
 		};
 		C0C3E1F22674DA3C003AF403 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACEEC2E93ABF2187AF7B0F49 /* Pods-Prescription Generator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AK42MN434;
 				INFOPLIST_FILE = "Prescription Generator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,12 +567,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C0C3E1E52674DA35003AF403 /* Prescription_Generator.xcdatamodeld */ = {
+		C0427F842674DE0000309A98 /* Prescription_Generator.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C0C3E1E62674DA35003AF403 /* Prescription_Generator.xcdatamodel */,
+				C0427F852674DE0000309A98 /* Prescription_Generator.xcdatamodel */,
 			);
-			currentVersion = C0C3E1E62674DA35003AF403 /* Prescription_Generator.xcdatamodel */;
+			currentVersion = C0427F852674DE0000309A98 /* Prescription_Generator.xcdatamodel */;
 			path = Prescription_Generator.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

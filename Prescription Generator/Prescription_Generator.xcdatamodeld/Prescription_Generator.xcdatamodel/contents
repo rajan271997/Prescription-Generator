@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Medicine" representedClassName="Medicine" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="strength" optional="YES" attributeType="String"/>
+        <attribute name="strengthType" optional="YES" attributeType="String"/>
+        <attribute name="times" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="toPrescription" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Prescription" inverseName="rawMedicines" inverseEntity="Prescription"/>
+    </entity>
+    <entity name="Prescription" representedClassName="Prescription" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="patientName" optional="YES" attributeType="String"/>
+        <relationship name="rawMedicines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Medicine" inverseName="toPrescription" inverseEntity="Medicine"/>
+    </entity>
+    <elements>
+        <element name="Medicine" positionX="-128.4002685546875" positionY="-19.90679931640625" width="128" height="163"/>
+        <element name="Prescription" positionX="-126" positionY="36" width="128" height="74"/>
+    </elements>
 </model>
