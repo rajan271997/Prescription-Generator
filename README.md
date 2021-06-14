@@ -1,7 +1,7 @@
 
 # Prescription-Generator
 
-Its an application for a doctor to give us the ability to create a prescriptin for the patient.
+Its an application for a doctor to give us the ability to create a prescription for the patient.
 
 ![demo_prescription](https://user-images.githubusercontent.com/46319748/121935636-4735d280-cd66-11eb-9c9e-fa6643211b8e.gif)
 
